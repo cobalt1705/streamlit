@@ -7,7 +7,7 @@ path = 'https://raw.githubusercontent.com/mwaskom/seaborn-data/master/tips.csv'
 path = pd.read_csv(path)
 
 
-st.write(tips)
+st.write(path)
 
 # 4
 
@@ -19,7 +19,7 @@ st.pyplot()
 
 # 5
 st.subheader('Cвязь между total_bill and tip')
-plt.scatter(tips['total_bill'], tips['tip'])
+plt.scatter(path['total_bill'], path['tip'])
 plt.xlabel('Total Bill')
 plt.ylabel('Tip')
 st.pyplot()
